@@ -1,5 +1,8 @@
+Running DB container and all migrations:
 $ docker-compose up -d postgresd
 $ docker-compose up hydra-migrate
+$ docker-compose up oathkeeper-migrate
+
 
 # Create the client for consent-app
 $ hydra clients create --skip-tls-verify \
